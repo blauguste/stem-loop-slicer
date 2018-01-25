@@ -29,7 +29,7 @@ def stem_loop_sep(infile):
                     trail_trim = -i
                 else: break
 
-        if trail_trim > 0:
+        if trail_trim != 0:
             trim_align = alignment[:, lead_trim:trail_trim]
             trim_struc = SS_cons[lead_trim:trail_trim]
         else:
